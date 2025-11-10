@@ -299,6 +299,120 @@ body {
     @apply w-[140px] h-[140px];
   }
 
+  /* Contact Section Styles */
+  .contact-section {
+    @apply relative py-16 px-4 bg-gray-50 min-h-[80svh];
+    scroll-margin-top: var(--nav-h);
+  }
+
+  .contact-container {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .contact-header {
+    @apply text-center mb-12;
+  }
+
+  .contact-title {
+    @apply text-5xl leading-tight text-gray-900 mb-4;
+  }
+
+  .contact-subtitle {
+    @apply mt-4 text-2xl md:text-[28px] leading-relaxed md:leading-10 max-w-2xl px-6 lg:px-6 mx-auto text-[#374754];
+  }
+
+  /* Contact Form */
+  .contact-form {
+    @apply bg-white rounded-[20px] h-full shadow-lg p-10;
+  }
+
+  .contact-form-mobile {
+    @apply p-8 mx-4;
+  }
+
+  .contact-form-title {
+    @apply text-xl font-bold text-gray-900 mb-8;
+  }
+
+  .contact-form-title-mobile {
+    @apply mb-6;
+  }
+
+  .contact-form-fields {
+    @apply mt-4 space-y-6 h-full flex flex-col;
+  }
+
+  .contact-input {
+    @apply w-full bg-[#F5F5F5] border-0 rounded-[10px] h-[54px] text-sm placeholder:text-gray-500;
+  }
+
+  .contact-textarea {
+    @apply w-full bg-[#F5F5F5] border-0 rounded-[10px] text-sm placeholder:text-gray-500;
+  }
+
+  .contact-submit {
+    @apply px-10 py-4 bg-[#2091F9] text-white font-medium rounded-full hover:bg-blue-600 transition-colors shadow-md h-auto;
+  }
+
+  .contact-submit-mobile {
+    @apply w-full py-6;
+  }
+
+  /* Mobile Layout */
+  .contact-mobile {
+    @apply lg:hidden;
+  }
+
+  .contact-info-mobile {
+    @apply space-y-6 mb-12;
+  }
+
+  .contact-info-item-mobile {
+    @apply flex items-start gap-4 justify-start px-4;
+  }
+
+  .contact-info-text-mobile {
+    @apply text-gray-700 text-sm whitespace-pre-line;
+  }
+
+  /* Desktop Layout */
+  .contact-desktop {
+    @apply hidden lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start;
+  }
+
+  .contact-desktop-content {
+    @apply space-y-8;
+  }
+
+  .contact-info-desktop {
+    @apply flex items-start justify-between gap-6;
+  }
+
+  .contact-info-item-desktop {
+    @apply flex flex-col items-center text-center flex-1;
+  }
+
+  .contact-info-icon-wrapper {
+    @apply w-12 h-12 flex-center mb-3;
+  }
+
+  .contact-info-icon {
+    @apply w-5 h-5 lg:w-6 lg:h-6 text-[#2091F9] shrink-0;
+  }
+
+  .contact-info-item-mobile .contact-info-icon {
+    @apply mt-1;
+  }
+
+  .contact-info-text-desktop {
+    @apply text-gray-700 text-xs whitespace-pre-line;
+  }
+
+  /* Map */
+  .contact-map {
+    @apply rounded-[20px] overflow-hidden shadow-lg h-[280px];
+  }
+
   /* Header/Navbar styles */
   header {
     @apply fixed top-0 z-50 transition-colors duration-400 ease-in-out w-full h-18 flex justify-center;

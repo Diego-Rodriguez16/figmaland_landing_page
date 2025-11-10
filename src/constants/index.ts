@@ -34,8 +34,6 @@ const features: Feature[] = [
   },
 ];
 
-// ...existing code...
-
 interface FooterSection {
   title: string;
   links: string[];
