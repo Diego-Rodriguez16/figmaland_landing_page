@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 interface SocialLinksProps {
   className?: string;
@@ -8,8 +8,8 @@ interface SocialLinksProps {
 const SocialLinks = ({ className = "", color = "blue" }: SocialLinksProps) => {
   const socialMedia = [
     { icon: FaTwitter, href: "#", hoverColor: "hover:text-blue-500" },
-    { icon: FaFacebookF, href: "#", hoverColor: "hover:text-blue-700" },
-    { icon: FaLinkedinIn, href: "#", hoverColor: "hover:text-blue-800" },
+    { icon: FaFacebookSquare, href: "#", hoverColor: "hover:text-blue-700" },
+    { icon: FaLinkedin, href: "#", hoverColor: "hover:text-blue-800" },
   ];
 
   const baseColorClass = color === "white" ? "text-white" : "text-[#2091F9]";
@@ -19,7 +19,7 @@ const SocialLinks = ({ className = "", color = "blue" }: SocialLinksProps) => {
       {socialMedia.map((social, index) => {
         const Icon = social.icon;
         const hoverClass =
-          color === "white" ? "hover:text-white" : social.hoverColor;
+          color === "white" ? "hover:text-gray-400" : social.hoverColor;
         return (
           <a
             key={index}
