@@ -413,6 +413,75 @@ body {
     @apply rounded-[20px] overflow-hidden shadow-lg h-[280px];
   }
 
+  /* Footer Styles */
+  .footer {
+    @apply relative bg-slate-800 text-white py-12 px-4;
+  }
+
+  .footer-container {
+    @apply max-w-5xl mx-auto;
+  }
+
+  /* Footer Sections */
+  .footer-section-title {
+    @apply font-bold text-lg mb-4;
+  }
+
+  .footer-links-list {
+    @apply space-y-3 text-sm text-gray-300;
+  }
+
+  .footer-link {
+    @apply hover:text-white transition-colors;
+  }
+
+  /* Footer Contact */
+  .footer-contact {
+    @apply space-y-4;
+  }
+
+  .footer-contact-item {
+    @apply flex items-center lg:items-start justify-center lg:justify-start gap-3;
+  }
+
+  .footer-contact-icon {
+    @apply w-5 h-5 text-white shrink-0;
+  }
+
+  .footer-contact-text {
+    @apply text-sm text-gray-300;
+  }
+
+  /* Footer Mobile Layout */
+  .footer-mobile {
+    @apply lg:hidden space-y-12;
+  }
+
+  .footer-mobile-sections {
+    @apply space-y-8;
+  }
+
+  .footer-section-mobile {
+    @apply text-center;
+  }
+
+  .footer-contact-mobile {
+    @apply text-center;
+  }
+
+  /* Footer Desktop Layout */
+  .footer-desktop {
+    @apply hidden lg:grid lg:grid-cols-2 lg:gap-16;
+  }
+
+  .footer-desktop-links {
+    @apply grid grid-cols-3 gap-8;
+  }
+
+  .footer-desktop-contact {
+    @apply flex flex-col justify-between items-start;
+  }
+
   /* Header/Navbar styles */
   header {
     @apply fixed top-0 z-50 transition-colors duration-400 ease-in-out w-full h-18 flex justify-center;
