@@ -34,7 +34,7 @@ const NavBar = () => {
             <img src="/dark-logo.svg" alt="Logo" className="h-18" />
           </a>
 
-          {/* Links visibles solo en desktop */}
+          {/* List - only desktop */}
           <ul className="hidden lg:flex items-center space-x-8">
             {navLinks.map(({ label }) => (
               <li key={label}>
@@ -46,21 +46,21 @@ const NavBar = () => {
           </ul>
         </div>
 
-        {/* Center: just logo */}
+        {/* Center: logo */}
         <div className="hidden lg:flex justify-center">
           <a href="#" aria-label="Home" className="inline-flex items-center">
             <img src="/dark-logo.svg" alt="Logo" className="h-18" />
           </a>
         </div>
 
-        {/* Right: social icons (desktop) and menu (mobile) */}
+        {/* Right: social links */}
         <div className="flex justify-end items-center space-x-4 lg:space-x-8">
           {/* Social icons - only desktop */}
           <div className="hidden lg:flex items-center space-x-8 ">
             <SocialLinks color="white" />
           </div>
 
-          {/* Menu - only mobile */}
+          {/* Hamburger menu - only mobile */}
           <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
@@ -95,7 +95,7 @@ const NavBar = () => {
                     ))}
                   </ul>
 
-                  {/* Social icons en mobile */}
+                  {/* Social links */}
                   <div className="flex-center gap-6 pt-4 border-t border-gray-200">
                     <SocialLinks color="white" />
                   </div>

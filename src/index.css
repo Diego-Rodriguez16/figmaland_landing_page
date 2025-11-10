@@ -202,6 +202,103 @@ body {
     @apply absolute bottom-0 left-0 right-0 h-28 md:h-36 lg:h-44 z-30;
   }
 
+  /* Features Section Styles */
+  .features-section {
+    @apply relative w-full py-16 bg-gray-50;
+    scroll-margin-top: var(--nav-h);
+  }
+
+  .features-container {
+    @apply mx-auto;
+  }
+
+  .features-header {
+    @apply text-center mb-16;
+  }
+
+  .features-title {
+    @apply text-5xl leading-tight text-gray-900 mb-4;
+  }
+
+  .features-subtitle {
+    @apply mt-4 text-2xl md:text-[28px] leading-relaxed md:leading-10 max-w-2xl px-6 lg:px-6 mx-auto text-[#374754];
+  }
+
+  /* Features Grid - Desktop */
+  .features-grid {
+    @apply hidden lg:grid lg:grid-cols-3 gap-8 mb-16 max-w-3xl mx-auto;
+  }
+
+  .feature-card {
+    @apply text-center;
+  }
+
+  .feature-icon {
+    @apply mx-auto mb-4;
+  }
+
+  .feature-title {
+    @apply font-bold text-gray-900 mb-2 text-xl leading-7;
+  }
+
+  .feature-description {
+    @apply text-gray-600 text-lg leading-[25px] px-4 py-4;
+  }
+
+  /* Features Mobile Layout */
+  .features-mobile {
+    @apply lg:hidden space-y-12 mb-16;
+  }
+
+  .feature-card-mobile {
+    @apply text-center px-6 sm:px-25 py-8;
+  }
+
+  .feature-title-mobile {
+    @apply font-bold text-gray-900 mb-2 text-2xl leading-7;
+  }
+
+  .feature-description-mobile {
+    @apply text-gray-600 text-xl sm:text-[22px] leading-[25px] px-4 py-4;
+  }
+
+  /* Video Components */
+  .feature-video-mobile {
+    @apply relative rounded-[20px] overflow-hidden shadow-lg mx-4;
+  }
+
+  .feature-video-desktop {
+    @apply hidden lg:block relative rounded-[30px] overflow-hidden shadow-xl max-w-4xl mx-auto;
+  }
+
+  .feature-video-img {
+    @apply w-full object-cover;
+  }
+
+  .feature-video-mobile .feature-video-img {
+    @apply h-64;
+  }
+
+  .feature-video-desktop .feature-video-img {
+    @apply h-[500px];
+  }
+
+  .feature-video-btn {
+    @apply absolute inset-0 flex-center cursor-pointer;
+  }
+
+  .feature-play-button {
+    @apply bg-[#2091F9] rounded-full flex-center shadow-xl hover:scale-105 transition-transform;
+  }
+
+  .feature-play-button-sm {
+    @apply w-[100px] h-[100px];
+  }
+
+  .feature-play-button-lg {
+    @apply w-[140px] h-[140px];
+  }
+
   /* Header/Navbar styles */
   header {
     @apply fixed top-0 z-50 transition-colors duration-400 ease-in-out w-full h-18 flex justify-center;
